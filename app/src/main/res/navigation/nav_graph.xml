@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listaFragment">
+
+    <fragment
+        android:id="@+id/listaFragment"
+        android:name="com.kotlin.pruebakotlin.ui.ListaFragment"
+        android:label="fragment_lista"
+        tools:layout="@layout/fragment_lista" >
+        <action
+            android:id="@+id/action_listaFragment_to_detallleFragment"
+            app:destination="@id/detallleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detallleFragment"
+        android:name="com.kotlin.pruebakotlin.ui.DetallleFragment"
+        android:label="fragment_detallle"
+        tools:layout="@layout/fragment_detallle" />
+</navigation>
